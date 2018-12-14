@@ -1,0 +1,32 @@
+import mongoose from 'mongoose';
+{{#if imports}}
+
+{{#each imports}}
+{{#import this ../allImports '../..'}}
+import {{{name}}} from '{{{module}}}';
+{{/import}}
+{{/each}}
+{{/if}}
+
+mongoose.connect('mongodb://db/test');
+
+const {{{case name 'camel'}}}Schema = new mongoose.Schema({
+    {{#each attributes}}
+    {{{@key}}}: {
+    {{#each this}}
+    {{#eq @key 'type'}}
+    {{{@key}}}: {{{case this 'pascal'}}}{{#unless @last}},{{/unless}}
+    {{else}}
+    {{{@key}}}: {{{json this 1}}}{{#unless @last}},{{/unless}}
+    {{/eq}}
+    {{/each}}
+    }{{#unless @last}},{{/unless}}
+    {{/each}}
+});
+
+const {{{case name 'pascal'}}}Model = mongoose.model(
+    '{{{case name 'pascal'}}}',
+    {{{case name 'camel'}}}Schema
+);
+
+export default {{{case name 'pascal'}}}Model;

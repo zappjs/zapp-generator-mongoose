@@ -1,0 +1,14 @@
+src/models/<key>.js:
+  engine: handlebars
+  template: model
+  iterator: /models
+  filename:
+    engine: handlebars
+    template: 'src/models/{{{name}}}.js'
+    mapping:
+      name: '@key'
+  mapping:
+    name: '@key'
+    attributes: ./attributes
+    allImports: /imports
+    imports: ./imports

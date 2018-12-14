@@ -1,0 +1,210 @@
+specs:
+  /dependencies:
+    keys:
+      - dependencies
+  /:
+    keys:
+      - dependencies
+      - models
+  /dependencies/mongoose: {}
+files:
+  /models%2F%3Ckey%3E.js:
+    keys:
+      - models/<key>.js
+  /:
+    keys:
+      - - src/models/<key>.js
+  /models%2F%3Ckey%3E.js/engine: {}
+  /models%2F%3Ckey%3E.js/template: {}
+  /models%2F%3Ckey%3E.js/iterator: {}
+  /models%2F%3Ckey%3E.js/filename:
+    keys:
+      - models/<key>.js
+  /models%2F%3Ckey%3E.js/filename/engine: {}
+  /models%2F%3Ckey%3E.js/filename/template: {}
+  /models%2F%3Ckey%3E.js/mapping:
+    keys:
+      - models/<key>.js
+  /models%2F%3Ckey%3E.js/mapping/name: {}
+  /models%2F%3Ckey%3E.js/mapping/attributes: {}
+  /models%2F%3Ckey%3E.js/mapping/allImports: {}
+  /models%2F%3Ckey%3E.js/mapping/imports: {}
+  /src%2Fmodels%2F%3Ckey%3E.js: {}
+  /src%2Fmodels%2F%3Ckey%3E.js/filename/mapping:
+    keys:
+      - name
+  /src%2Fmodels%2F%3Ckey%3E.js/filename:
+    keys:
+      - engine
+      - template
+      - mapping
+templates:
+  /model:
+    keys:
+      - model
+  /:
+    keys:
+      - model
+  /model/template:
+    type: code
+    mode: handlebars
+imports:
+  /zappjs/handlebars: {}
+  /zappjs:
+    keys:
+      - zappjs
+schemas:
+  /models:
+    keys:
+      - models
+  /:
+    keys:
+      - models
+  /models/type: {}
+  /models/additionalProperties:
+    keys:
+      - models
+  /models/additionalProperties/type: {}
+  /models/additionalProperties/properties:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes/additionalProperties/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties:
+    keys:
+      - default
+      - enum
+      - index
+      - lowercase
+      - min
+      - minlength
+      - match
+      - max
+      - maxlength
+      - required
+      - select
+      - sparse
+      - trim
+      - type
+      - unique
+      - uppercase
+      - validate
+      - get
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/0: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/1: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/2: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/default:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/default/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/3: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/4: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/5: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/6: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/7: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/8: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/type/enum/9: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/min:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/max:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/min/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/max/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/lowercase:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/lowercase/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/uppercase:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/uppercase/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/trim:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/trim/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/minlength:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/minlength/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/maxlength:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/maxlength/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/enum:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/enum/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/match:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/match/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/index:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/index/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/unique:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/unique/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/sparse:
+    keys:
+      - description
+      - type
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/sparse/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/index/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/unique/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/sparse/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/uppercase/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/trim/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/match/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/enum/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/minlength/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/maxlength/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/min/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/max/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/required:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/required/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/required/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/default/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/select:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/select/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/select/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/validate:
+    keys:
+      - models
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/validate/description: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/validate/type: {}
+  /models/additionalProperties/properties/attributes/additionalProperties/properties/lowercase/description: {}
+engines:
+  /:
+    keys:
+      - handlebars-0

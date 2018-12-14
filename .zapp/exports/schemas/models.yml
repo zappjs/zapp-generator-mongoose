@@ -1,0 +1,82 @@
+type: object
+additionalProperties:
+  type: object
+  properties:
+    attributes:
+      type: object
+      additionalProperties:
+        type: object
+        properties:
+          default:
+            description: sets a default value for the path
+            type: string
+          enum:
+            description: >-
+              creates a validator that checks if the value is in the given
+              array
+            type: array
+          index:
+            description: whether to define an index on this property
+            type: boolean
+          lowercase:
+            description: whether to always call .toLowerCase() on the value
+            type: boolean
+          min:
+            description: >-
+              creates a validator that checks if the value is greater than
+              or equal to the given minimum
+            type: number
+          minlength:
+            description: >-
+              creates a validator that checks if the value length is not
+              less then the given number
+            type: number
+          match:
+            description: >-
+              creates a validator that checks if the value matches the given
+              regular expression
+            type: string
+          max:
+            description: >-
+              creates a validator that checks if the value is less than or
+              equal to the given maximum
+            type: number
+          maxlength:
+            description: >-
+              creates a validator that checks if the value length is not
+              greater then the given number
+            type: number
+          required:
+            description: if true adds a required validator for this property
+            type: boolean
+          select:
+            description: specifies default projections for queries
+            type: boolean
+          sparse:
+            description: whether to define a sparse index on this property
+            type: boolean
+          trim:
+            description: whether to always call .trim() on the value
+            type: boolean
+          type:
+            type: string
+            enum:
+              - array
+              - buffer
+              - boolean
+              - date
+              - decimal
+              - map
+              - mixed
+              - number
+              - objectId
+              - string
+          unique:
+            description: whether to define a unique index on this property
+            type: boolean
+          uppercase:
+            description: whether to always call .toUpperCase() on the value
+            type: boolean
+          validate:
+            description: adds a validator function for this property
+            type: string
