@@ -1,0 +1,13 @@
+engine: handlebars
+template: model
+iterator: /models
+filename:
+  engine: handlebars
+  template: 'src/models/{{{name}}}.ts'
+  mapping:
+    name: '@key'
+mapping:
+  name: '@key'
+  attributes: ./attributes
+  allImports: /imports
+  imports: ./imports
